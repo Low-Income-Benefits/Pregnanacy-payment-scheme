@@ -16,7 +16,9 @@ pipeline {
     }
     stage('Compile'){
       steps{
-          sh 'mvn clean compile'
+          sh 'git clone https://github.com/Low-Income-Benefits/Pregnanacy-payment-scheme.git'
+          sh 'mvn clean'
+          sh 'mvn compile'
       }
     }
     stage('Test'){
