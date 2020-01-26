@@ -1,6 +1,7 @@
 #! /Groovy
 
 pipeline {
+  agent any
   stages {
     stage('Clean'){
       echo 'Deleting Workspace'
